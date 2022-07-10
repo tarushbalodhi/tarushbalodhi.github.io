@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+        integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>university website</title>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="/Images/newlogo.jpg" alt="">
+            </a>
+
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-swords" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="(showMenu())"> </i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <!-- Contact  -->
+    <section class="location">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9840730514184!2d77.28327916459529!3d28.63023944093656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfcaab16cbaa3%3A0x2ce296ce27c35c10!2sBHAI%20PARMANAND%20INSTITUTE%20OF%20BUSINESS%20STUDIES%2C%20Shakarpur%2C%20New%20Delhi%2C%20Delhi%20110092!5e0!3m2!1sen!2sin!4v1657439707324!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"> </i>
+                    <span>
+                        <h4> xyz road, abc building </h4>
+                        <p>India new delhi 110092</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"> </i>
+                    <span>
+                        <h4> xyz road, abc building </h4>
+                        <p>India new delhi 110092</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" placeholder="enter your name" name="name" required>
+                    <input type="text" placeholder="email" required name="email">
+                    <input type="text" placeholder="enter your subject" required name="subject">
+                    <textarea name="" id=""  rows="8" name="message"></textarea>
+                    <button type="submit" class="hero-btn second">Send Message </button>
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- footer  -->
+    <section class="footer">
+        <h4>
+            About Us
+        </h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, veritatis exercitationem <br>
+            deserunt ut aliquid possimus iusto perferendis aut totam recusandae laudantium cum.
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript -->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu() {
+            navlinks.style.right = "0";
+        }
+        function hideMenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
